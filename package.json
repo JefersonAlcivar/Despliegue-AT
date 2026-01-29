@@ -25,5 +25,9 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/JefersonAlcivar/Despliegue-AT.git"
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/JefersonAlcivar/Despliegue-AT/issues"
+    },
+    "homepage": "https://github.com/JefersonAlcivar/Despliegue-AT#readme"
 }
