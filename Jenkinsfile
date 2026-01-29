@@ -1,13 +1,14 @@
+
+
 pipeline {
     agent any
 
     tools {
         nodejs "Node22"
-        dockerTool 'Dockertool'
+        dockerTool "Dockertool" 
     }
 
     stages {
-
         stage('Instalar dependencias') {
             steps {
                 sh 'npm install'
@@ -16,7 +17,8 @@ pipeline {
 
         stage('Ejecutar tests') {
             steps {
-                sh 'npm test'
+                sh 'chmod +x ./node_modules/.bin/jest'
+                sh 'npm test -- --ci --runInBand'
             }
         }
 
